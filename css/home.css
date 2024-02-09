@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menubar li{
+    font-size: 25px;
+}
+
+.menubar #logo{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.intro img{
+    width: 100%;
+}
+
+.division img{
+    margin: 0 auto;
+    display: flex;
+}
