@@ -1,0 +1,64 @@
+/* ========== configurando a folha de estilos ===========*/
+@font-face {
+    font-family: 'inter';
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F2F2F2;
+    font-family: 'inter';
+}
+
+body::-webkit-scrollbar {
+    width: 15px; /* configurando a scrollbar com 15px de largura */
+}
+
+body::-webkit-scrollbar-track {
+    background: #006432; /* alterando a cor da 'track' */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #B2D0C1; /* alterando a cor do 'thumb' */
+    border-radius: 20px; /* arredondando a borda do 'thumb'*/
+    border: 2px solid #006432; /* inserindo borda de 2px no 'thumb' */
+}
+
+/* ========== estilizando a menubar ===========*/
+
+.menubar {
+    position: relative;
+    margin: 50px 10px 50px 10px;
+}
+
+.menubar ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.menubar li {
+    list-style-type: none;
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.menubar #logo {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+/* =========== estilzação da seção de marcas ========== */
+
+.products .name{
+    display: flex;
+    margin: 30px 0 0 110px;
+}
+
+.prod-brands h2{
+    font-size: 30px;
+}

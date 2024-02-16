@@ -1,23 +1,131 @@
-*{
+/* ========== configurando a folha de estilos ===========*/
+@font-face {
+    font-family: 'inter';
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #F2F2F2;
+    font-family: 'inter';
 }
 
-.menubar li{
-    font-size: 25px;
+body::-webkit-scrollbar {
+    width: 15px; /* configurando a scrollbar com 15px de largura */
 }
 
-.menubar #logo{
-    font-size: 36px;
+body::-webkit-scrollbar-track {
+    background: #006432; /* alterando a cor da 'track' */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #B2D0C1; /* alterando a cor do 'thumb' */
+    border-radius: 20px; /* arredondando a borda do 'thumb'*/
+    border: 2px solid #006432; /* inserindo borda de 2px no 'thumb' */
+}
+
+/* ========== estilizando a menubar ===========*/
+
+.menubar {
+    position: relative;
+    margin: 50px 10px 50px 10px;
+}
+
+.menubar ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.menubar li {
+    list-style-type: none;
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.menubar #logo {
+    font-size: 45px;
     font-weight: 900;
 }
 
-.intro img{
+/* ========== estilizando a seção intro ===========*/
+
+.intro img {
     width: 100%;
 }
 
-.division img{
+/* ========== estilizando a divisória ===========*/
+
+.division img {
     margin: 0 auto;
     display: flex;
+    padding: 60px 0 60px 0;
+    width: 2vw;
 }
+
+/* ========== estilizando a seção about ===========*/
+
+.ab-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 45%;
+    text-align: center;
+}
+
+.about-us h2{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.about-us p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.shoes1 img{
+    width: 20vw;
+}
+
+.shoes2 img{
+    width: 20vw;
+}
+
+/* ========== estilizando a seção sports ===========*/
+
+.spo-collections{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spo-collections h2{
+    font-weight: 800;
+}
+
+.spo-collections p{
+    font-size: 25px;
+}
+
+.spo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spo-basket img, .spo-athletics img, .spo-foot img{
+    margin: 20px;
+    width: 20vw;
+} 
