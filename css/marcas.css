@@ -8,8 +8,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #F2F2F2;
     font-family: 'inter';
+}
+
+body{
+    background: #F2F2F2;
 }
 
 body::-webkit-scrollbar {
@@ -54,11 +57,165 @@ body::-webkit-scrollbar-thumb {
 
 /* =========== estilzação da seção de marcas ========== */
 
-.products .name{
+.brands .name{
     display: flex;
     margin: 30px 0 0 110px;
 }
 
 .prod-brands h2{
     font-size: 30px;
+}
+
+.product-box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,0.08);
+    margin: 0px 20px;
+    position: relative;
+}
+
+.prod-container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    overflow: hidden;
+}
+
+.prod-img a, .prod-img img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.prod-img a img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+.prod-img-front{
+    display: none;
+}
+
+.prod-container:hover .prod-img-front{
+    display: block;
+}
+
+.prod-container:hover .prod-img-side{
+    display: none;
+}
+
+.prod-info{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.prod-category{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prod-category p{
+    color: #26ad6995;
+    font-size: 13px;
+    margin: 5px 0px;
+}
+
+.prod-title{
+    color: #202020;
+    font-weight: 600;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+.prod-title:hover{
+    color: #111111;
+    opacity: 0.7;
+    transition: ease-in-out 0.3s;
+}
+
+.prod-buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.prod-buy a{
+    text-decoration: none;
+}
+
+.prod-buy .prod-price{
+    font-size: 20px;
+    color: #202020;
+    font-weight: 700;
+}
+
+.prod-buy .buy-btn{
+    color: #007a3d;
+    margin: 0px 5px;
+    font-weight: 600;
+}
+
+.prod-buy .buy-btn:hover{
+    text-decoration: underline;
+}
+
+.prod-discount{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    width: 65px;
+    height: 24px;
+    padding: 2px;
+    color: #FFFFFF;
+    background-color: #007a3d;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    z-index: 100;
+    border-radius: 3px;
+}
+/*========== estilização do footer ========== */
+
+footer {
+    background: #000000;
+}
+
+.ft-container {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.ft-container h4{
+    margin-bottom: 5px;
+}
+
+.ft-lgnsm h3{
+    margin-bottom: 10px;
+    font-size: 2.5vw;
+}
+
+.ft-logos img{
+    width: 3vw;
+    margin: 7px 6px;
+}
+
+.ft-cnt a{
+    text-decoration: none;
+    color: #7DF7BA;
+}
+
+.ft-cnt a:hover{
+    text-decoration: none;
+    color: #26ad69;
+    transition: 0.5s;
 }

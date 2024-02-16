@@ -8,8 +8,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #F2F2F2;
     font-family: 'inter';
+}
+
+body {
+    background: #F2F2F2;
 }
 
 body::-webkit-scrollbar {
@@ -35,7 +38,7 @@ body::-webkit-scrollbar-thumb {
 
 .menubar ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
 }
@@ -84,14 +87,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-us h2{
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .about-us p{
-    font-size: 16px;
-    margin: 10px 0;
+    font-size: 19px;
+    margin: 5px 0;
 }
 
 .shoes1 img{
@@ -113,10 +116,13 @@ body::-webkit-scrollbar-thumb {
 
 .spo-collections h2{
     font-weight: 800;
+    font-size: 28px;
+    margin: 10px;
 }
 
 .spo-collections p{
-    font-size: 25px;
+    font-size: 19px;
+    margin: 5px;
 }
 
 .spo-container{
@@ -128,4 +134,41 @@ body::-webkit-scrollbar-thumb {
 .spo-basket img, .spo-athletics img, .spo-foot img{
     margin: 20px;
     width: 20vw;
-} 
+}
+
+/* ========== estilização do footer ========== */
+
+footer {
+    background: #000000;
+}
+
+.ft-container {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.ft-container h4{
+    margin-bottom: 5px;
+}
+
+.ft-lgnsm h3{
+    margin-bottom: 10px;
+    font-size: 2.5vw;
+}
+
+.ft-logos img{
+    width: 3vw;
+    margin: 7px 6px;
+}
+
+.ft-cnt a{
+    text-decoration: none;
+    color: #7DF7BA;
+}
+
+.ft-cnt a:hover{
+    text-decoration: none;
+    color: #26ad69;
+}
