@@ -60,13 +60,26 @@ body::-webkit-scrollbar-thumb {
 
 /* =========== estilzação da seção de marcas ========== */
 
-.brands .name{
+
+
+.brand-name, .brands .title{
     display: flex;
     margin: 30px 0 0 110px;
 }
 
 .prod-brands h2{
     font-size: 30px;
+}
+
+.shoes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoes-slider{
+    max-width: 1690px;
+    width: 100%;
 }
 
 .product-box{

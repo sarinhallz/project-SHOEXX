@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'inter';
+    text-decoration: none;
 }
 
 body {
@@ -48,6 +49,15 @@ body::-webkit-scrollbar-thumb {
     width: 20%;
     text-align: center;
     font-size: 18px;
+}
+
+.menubar li a{
+    color: #000000;
+}
+
+.menubar li a:hover{
+    color: #006432;
+    transition: 0.5s;
 }
 
 .menubar #logo {
@@ -171,4 +181,5 @@ footer {
 .ft-cnt a:hover{
     text-decoration: none;
     color: #26ad69;
+    transition: 0.5s;
 }
