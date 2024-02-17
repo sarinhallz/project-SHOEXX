@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcas. | SHOEXX</title>
 
+    <!-- linkando arquivos css -->
     <link rel="stylesheet" href="../css/marcas.css">
+    <link rel="stylesheet" href="../css/lightslider.css">
+    <!-- linkando jquery -->
+    <script src="../js/Jquery.js"></script>
+    <script src="../js/lightslider.js"></script>
 </head>
 
 <body>
@@ -16,7 +21,9 @@
                 <ul>
                     <li>marcas</li>
                     <li>coleções</li>
-                    <a href="/html/home.html"><li id="logo" ">S H O E X X</li></a>
+                    <a href="/html/home.html">
+                        <li id="logo" ">S H O E X X</li>
+                    </a>
                     <li>dicas de estilo</li>
                     <li>conta</li>
                 </ul>
@@ -24,82 +31,170 @@
         </section>
     </header>
 
-    <section class="index">
-        <div class="name">
-            <img src="../images/marcas.svg" alt="" srcset="">
-        </div>
-    </section>
-
-    <section class="products">
-        <div class="prod-brands">
-            <div class="nike">
-                <h2>NIKE</h2>
-
-                <div class="shoes-slider">
-                    <div class="product-box">
-
-                        <span class="prod-discount">-10%</span>
-
-                        <div class="prod-container">
-                            <div class="prod-img">
-                                <a href="#">
-                                    <img src="../images/air-zoom-cut-3.svg" class="prod-img-side" alt="" srcset="">
-                                    <img src="../images/side-airzoom.svg" class="prod-img-front" alt="" srcset="">
-                                </a>
+    <section class=" index">
+                            <div class="name">
+                                <img src="../images/marcas.svg" alt="" srcset="">
                             </div>
-                        </div>
-                       
-                        <div class="prod-info">
-                            <div class="prod-category">
-                               <p>Casual</p>
-                            </div>
-                            <a href="#" class="prod-title">Air Zoom GT Cut 3</a>
-                            <div class="prod-buy">
-                                <p class="prod-price">R$ 1599,99</p>
-                                <a href="#" class="buy-btn">Buy Now!</a>
-                            </div>
-                        </div>
+        </section>
+
+        <section class="products">
+            <div class="prod-brands">
+                <div class="nike">
+                    <h2>NIKE</h2>
+
+                    <div class="shoes-slider">
+                        <ul id="autoWidth" class="cs-hidden">
+                            <li class="item-a">
+                                <div class="product-box">
+
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/air-jordan-1.svg" class="prod-img-side" alt=""
+                                                    srcset="">
+                                                <img src="../images/side-airjordan.svg" class="prod-img-front" alt=""
+                                                    srcset="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Air Jordan 1 High OG</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 1699,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-a">
+                                <div class="product-box">
+
+                                    <span class="prod-discount">-10%</span>
+
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/air-zoom-cut-3.svg" class="prod-img-side" alt=""
+                                                    srcset="">
+                                                <img src="../images/side-airzoom.svg" class="prod-img-front" alt=""
+                                                    srcset="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Air Zoom GT Cut 3</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 1599,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-a">
+                                <div class="product-box">
+
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/air-jordan-1.svg" class="prod-img-side" alt=""
+                                                    srcset="">
+                                                <img src="../images/side-airjordan.svg" class="prod-img-front" alt=""
+                                                    srcset="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Air Jordan 1 High OG</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 1699,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-a">
+                                <div class="product-box">
+
+                                    <span class="prod-discount">-10%</span>
+
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/air-zoom-cut-3.svg" class="prod-img-side" alt=""
+                                                    srcset="">
+                                                <img src="../images/side-airzoom.svg" class="prod-img-front" alt=""
+                                                    srcset="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Air Zoom GT Cut 3</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 1599,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="adidas">
+                    <h2>ADIDAS</h2>
+                </div>
+                <div class="mizuno">
+                    <h2>MIZUNO</h2>
+                </div>
+                <div class="new-balance">
+                    <h2>NEW BALANCE</h2>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="ft-container">
+                <div class="ft-lgnsm"> <!-- "ft-lgnsm" significa "footer - logo e (and) sitemap" -->
+                    <h3>SHOEXX</h3>
+                    <h4>SITEMAP</h4>
+                    <p>Home</p>
+                    <p>Brands</p>
+                    <p>Collections</p>
+                    <p>Style tips</p>
+                </div>
+                <div class="ft-cnt">
+                    <h4>CONTACT US</h4>
+                    <p>Rua das Fiandeiras, Vila Olímpia, São Paulo - SP</p>
+                    <a href="https://maps.app.goo.gl/b9XsSibmVSLNZ8NZ7">
+                        <p>MAP/DIRECTIONS</p>
+                    </a>
+                </div>
+                <div class="ft-medias">
+                    <h4>FIND US IN SOCIAL MEDIAS</h4>
+                    <div class="ft-logos">
+                        <img src="../images/Facebook.svg" alt="" srcset="">
+                        <img src="../images/Instagram.svg" alt="" srcset="">
+                        <img src="../images/LinkedIn.svg" alt="" srcset="">
+                        <img src="../images/Twitter.svg" alt="" srcset="">
                     </div>
                 </div>
             </div>
-            <div class="adidas">
-                <h2>ADIDAS</h2>
-            </div>
-            <div class="mizuno">
-                <h2>MIZUNO</h2>
-            </div>
-            <div class="new-balance">
-                <h2>NEW BALANCE</h2>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="ft-container">
-            <div class="ft-lgnsm"> <!-- "ft-lgnsm" significa "footer - logo e (and) sitemap" -->
-                <h3>SHOEXX</h3>
-                <h4>SITEMAP</h4>
-                <p>Home</p>
-                <p>Brands</p>
-                <p>Collections</p>
-                <p>Style tips</p>
-            </div>
-            <div class="ft-cnt">
-                <h4>CONTACT US</h4>
-                <p>Rua das Fiandeiras, Vila Olímpia, São Paulo - SP</p>
-                <a href="https://maps.app.goo.gl/b9XsSibmVSLNZ8NZ7"><p>MAP/DIRECTIONS</p></a>
-            </div>
-            <div class="ft-medias">
-                <h4>FIND US IN SOCIAL MEDIAS</h4>
-                <div class="ft-logos">
-                    <img src="../images/Facebook.svg" alt="" srcset="">
-                    <img src="../images/Instagram.svg" alt="" srcset="">
-                    <img src="../images/LinkedIn.svg" alt="" srcset="">
-                    <img src="../images/Twitter.svg" alt="" srcset="">
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>

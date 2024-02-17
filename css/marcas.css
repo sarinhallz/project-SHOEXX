@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'inter';
+    text-decoration: none;
 }
 
 body{
@@ -51,6 +52,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menubar #logo {
+    text-decoration: none;
+    color: #000000;
     font-size: 45px;
     font-weight: 900;
 }
