@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marcas. | SHOEXX</title>
 
     <!-- linkando arquivos css -->
-    <link rel="stylesheet" href="../css/marcas.css">
-    <link rel="stylesheet" href="../css/lightslider.css">
-    <!-- linkando jquery -->
-    <script src="../js/carrossel.js"></script>
+    <link rel="stylesheet" href="../css/marcas.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <!-- linkando arquivos javascript -->
+    <script src="../js/nike.js" defer></script>
+    <script src="../js/adidas.js"></script>
+    <script src="../js/nb.js"></script>
 </head>
 
 <body>
@@ -20,9 +22,11 @@
                 <ul>
                     <li>marcas</li>
                     <li>coleções</li>
-                    <li><a href="home.html">
+                    <li>
+                        <a href="home.html">
                             <p id="logo">S H O E X X</p>
-                        </a></li>
+                        </a>
+                    </li>
                     <li>dicas de estilo</li>
                     <li>conta</li>
                 </ul>
@@ -32,7 +36,7 @@
 
     <section class="brands">
         <div class="title">
-            <img src="../images/marcas.svg" alt="" srcset="">
+            <img src="../images/marcas.svg" alt="" srcset="" />
         </div>
     </section>
 
@@ -42,18 +46,18 @@
                 <h2 class="brand-name">NIKE</h2>
 
                 <div class="shoes-container">
-                    <div class="shoes-slider">
-                        <ul id="autoWidth" class="cs-hidden">
-                            <li class="item-a">
+                    <div class="shoes-wrapper">
+                        <i id="nike-left" class="fa-solid fa-angle-left"></i>
+                        <ul class="carousel">
+                            <li class="slide">
                                 <div class="product-box">
-
                                     <div class="prod-container">
                                         <div class="prod-img">
                                             <a href="#">
                                                 <img src="../images/air-jordan-1.svg" class="prod-img-side" alt=""
-                                                    srcset="">
+                                                    srcset="" />
                                                 <img src="../images/side-airjordan.svg" class="prod-img-front" alt=""
-                                                    srcset="">
+                                                    srcset="" />
                                             </a>
                                         </div>
                                     </div>
@@ -70,18 +74,17 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item-a">
+                            <li class="slide">
                                 <div class="product-box">
-
                                     <span class="prod-discount">-10%</span>
 
                                     <div class="prod-container">
                                         <div class="prod-img">
                                             <a href="#">
                                                 <img src="../images/air-zoom-cut-3.svg" class="prod-img-side" alt=""
-                                                    srcset="">
+                                                    srcset="" />
                                                 <img src="../images/side-airzoom.svg" class="prod-img-front" alt=""
-                                                    srcset="">
+                                                    srcset="" />
                                             </a>
                                         </div>
                                     </div>
@@ -98,16 +101,15 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item-a">
+                            <li class="slide">
                                 <div class="product-box">
-
                                     <div class="prod-container">
                                         <div class="prod-img">
                                             <a href="#">
                                                 <img src="../images/air-max-90.svg" class="prod-img-side" alt=""
-                                                    srcset="">
+                                                    srcset="" />
                                                 <img src="../images/side-airmax90.svg" class="prod-img-front" alt=""
-                                                    srcset="">
+                                                    srcset="" />
                                             </a>
                                         </div>
                                     </div>
@@ -124,16 +126,15 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item-a">
+                            <li class="slide">
                                 <div class="product-box">
-
                                     <div class="prod-container">
                                         <div class="prod-img">
                                             <a href="#">
                                                 <img src="../images/dunk-low.svg" class="prod-img-side" alt=""
-                                                    srcset="">
+                                                    srcset="" />
                                                 <img src="../images/side-dunklow.svg" class="prod-img-front" alt=""
-                                                    srcset="">
+                                                    srcset="" />
                                             </a>
                                         </div>
                                     </div>
@@ -150,18 +151,17 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item-a">
+                            <li class="slide">
                                 <div class="product-box">
-
                                     <span class="prod-discount">-15%</span>
 
                                     <div class="prod-container">
                                         <div class="prod-img">
                                             <a href="#">
                                                 <img src="../images/gamma-force.svg" class="prod-img-side" alt=""
-                                                    srcset="">
+                                                    srcset="" />
                                                 <img src="../images/side-gammaforce.svg" class="prod-img-front" alt=""
-                                                    srcset="">
+                                                    srcset="" />
                                             </a>
                                         </div>
                                     </div>
@@ -179,24 +179,301 @@
                                 </div>
                             </li>
                         </ul>
+                        <i id="nike-right" class="fa-solid fa-angle-right"></i>
                     </div>
                 </div>
             </div>
+
             <div class="adidas">
                 <h2 class="brand-name">ADIDAS</h2>
+
+                <div class="shoes-container">
+                    <div class="shoes-wrapper">
+                        <i id="adidas-left" class="fa-solid fa-angle-left"></i>
+                        <ul class="carousel">
+                            <li class="slide">
+                                <div class="product-box">
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/slip-on.svg" class="prod-img-side" alt=""
+                                                    srcset="" />
+                                                <img src="../images/side-slipon.svg" class="prod-img-front" alt=""
+                                                    srcset="" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Slip-On Superstar</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 399,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="product-box">
+                                    <span class="prod-discount">-5%</span>
+
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/bad-bunny.svg" class="prod-img-side" alt=""
+                                                    srcset="" />
+                                                <img src="../images/side-badbunny.svg" class="prod-img-front" alt=""
+                                                    srcset="" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Bad Bunny Response CL</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 1099,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="product-box">
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/galaxy-6.svg" class="prod-img-side" alt=""
+                                                    srcset="" />
+                                                <img src="../images/side-galaxy.svg" class="prod-img-front" alt=""
+                                                    srcset="" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Corrida</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Galaxy 6</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 389,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="product-box">
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/rivalry-low.svg" class="prod-img-side" alt=""
+                                                    srcset="" />
+                                                <img src="../images/side-rivalry.svg" class="prod-img-front" alt=""
+                                                    srcset="" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Rivalry Low</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 689,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="product-box">
+                                    <span class="prod-discount">-15%</span>
+
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/samba-og.svg" class="prod-img-side" alt=""
+                                                    srcset="" />
+                                                <img src="../images/side-samba.svg" class="prod-img-front" alt=""
+                                                    srcset="" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Samba OG</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 769,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <i id="adidas-right" class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
             </div>
-            <div class="mizuno">
-                <h2 class="brand-name">MIZUNO</h2>
-            </div>
+
             <div class="new-balance">
                 <h2 class="brand-name">NEW BALANCE</h2>
+
+                <div class="shoes-container">
+                    <div class="shoes-wrapper" id="shoes-wrapper-nb">
+                        <i id="nb-left" class="fa-solid fa-angle-left"></i>
+                        <ul class="carousel">
+                            <li class="slide">
+                                <div class="product-box">
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/550.svg" class="prod-img-side" alt=""
+                                                    srcset="" />
+                                                <img src="../images/side-550.svg" class="prod-img-front" alt=""
+                                                    srcset="" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">550</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 999,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="product-box">
+                                    <span class="prod-discount">-10%</span>
+
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/arishiv4.svg" class="prod-img-side" alt=""
+                                                    srcset="" />
+                                                <img src="../images/side-fresh.svg" class="prod-img-front" alt=""
+                                                    srcset="" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Fresh Foam Arishiv4</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 499,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="product-box">
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/nb-numeric.svg" class="prod-img-side" alt=""
+                                                    srcset="" />
+                                                <img src="../images/side-tiagolemos.svg" class="prod-img-front" alt=""
+                                                    srcset="" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Skateboard</p>
+                                        </div>
+                                        <a href="#" class="prod-title">Numeric Tiago Lemos 808</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 989,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="product-box">
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/574v2.svg" class="prod-img-side" alt=""
+                                                    srcset="" />
+                                                <img src="../images/side-574v2.svg" class="prod-img-front" alt=""
+                                                    srcset="" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">574v2</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 999,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="product-box">
+                                    <span class="prod-discount">-15%</span>
+
+                                    <div class="prod-container">
+                                        <div class="prod-img">
+                                            <a href="#">
+                                                <img src="../images/997h.svg" class="prod-img-side" alt=""
+                                                    srcset="" />
+                                                <img src="../images/side-997h.svg" class="prod-img-front" alt=""
+                                                    srcset="" />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-info">
+                                        <div class="prod-category">
+                                            <p>Casual</p>
+                                        </div>
+                                        <a href="#" class="prod-title">997h</a>
+                                        <div class="prod-buy">
+                                            <p class="prod-price">R$ 899,99</p>
+                                            <a href="#" class="buy-btn">Buy Now!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <i id="nb-right" class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="ft-container">
-            <div class="ft-lgnsm"> <!-- "ft-lgnsm" significa "footer - logo e (and) sitemap" -->
+            <div class="ft-lgnsm">
+                <!-- "ft-lgnsm" significa "footer - logo e (and) sitemap" -->
                 <h3>SHOEXX</h3>
                 <h4>SITEMAP</h4>
                 <p>Home</p>
@@ -214,10 +491,10 @@
             <div class="ft-medias">
                 <h4>FIND US IN SOCIAL MEDIAS</h4>
                 <div class="ft-logos">
-                    <img src="../images/Facebook.svg" alt="" srcset="">
-                    <img src="../images/Instagram.svg" alt="" srcset="">
-                    <img src="../images/LinkedIn.svg" alt="" srcset="">
-                    <img src="../images/Twitter.svg" alt="" srcset="">
+                    <img src="../images/Facebook.svg" alt="" srcset="" />
+                    <img src="../images/Instagram.svg" alt="" srcset="" />
+                    <img src="../images/LinkedIn.svg" alt="" srcset="" />
+                    <img src="../images/Twitter.svg" alt="" srcset="" />
                 </div>
             </div>
         </div>
