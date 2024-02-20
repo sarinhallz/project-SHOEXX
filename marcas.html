@@ -4,26 +4,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marcas. | SHOEXX</title>
+    <title>marcas. | shoexx</title>
 
-    <!-- linkando arquivos css -->
+    <!-- linkando arquivos css externos -->
     <link rel="stylesheet" href="../css/marcas.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <!-- linkando arquivos javascript -->
-    <script src="../js/nike.js" defer></script>
-    <script src="../js/adidas.js"></script>
-    <script src="../js/nb.js"></script>
+    <!-- linkando arquivo javascript externo com a propriedade defer -->
+    <script src="./nike.js" defer></script>
+    <!-- A propriedade defer em um elemento <script> indica ao navegador que o script deve ser executado após o carregamento do HTML, mas antes do evento DOMContentLoaded. ou seja, o script será baixado em paralelo ao processamento do HTML e, após o download, será executado em ordem de aparição no documento. -->
 </head>
 
 <body>
     <header>
+        <!-- cabeçalho da página -->
         <section class="menu">
+            <!-- menu de navegação -->
             <div class="menubar">
+                <!-- barra de menu -->
                 <ul>
+                    <!-- lista de itens do menu -->
                     <li>marcas</li>
                     <li>coleções</li>
                     <li>
+                        <!-- link para a página inicial -->
                         <a href="home.html">
+                            <!-- logo da empresa -->
                             <p id="logo">S H O E X X</p>
                         </a>
                     </li>
@@ -35,41 +40,64 @@
     </header>
 
     <section class="brands">
+        <!-- seção de marcas -->
         <div class="title">
+            <!-- título da seção -->
             <img src="../images/marcas.svg" alt="" srcset="" />
         </div>
     </section>
 
     <section class="products">
+        <!-- seção de produtos -->
         <div class="prod-brands">
+            <!-- container para marcas -->
             <div class="nike">
+                <!-- marca nike -->
                 <h2 class="brand-name">NIKE</h2>
 
                 <div class="shoes-container">
+                    <!-- container de sapatos -->
                     <div class="shoes-wrapper">
+                        <!-- wrapper de sapatos -->
                         <i id="nike-left" class="fa-solid fa-angle-left"></i>
+                        <!-- ícone para navegação à esquerda -->
                         <ul class="carousel">
+                            <!-- carrossel de sapatos -->
+                            <!-- lista de slides de sapatos -->
                             <li class="slide">
+                                <!-- slide de sapato -->
                                 <div class="product-box">
+                                    <!-- caixa do produto -->
                                     <div class="prod-container">
+                                        <!-- container do produto -->
                                         <div class="prod-img">
+                                            <!-- imagem do produto -->
                                             <a href="#">
+                                                <!-- link para detalhes do produto -->
                                                 <img src="../images/air-jordan-1.svg" class="prod-img-side" alt=""
                                                     srcset="" />
+                                                <!-- imagem lateral do produto -->
                                                 <img src="../images/side-airjordan.svg" class="prod-img-front" alt=""
                                                     srcset="" />
+                                                <!-- imagem frontal do produto -->
                                             </a>
                                         </div>
                                     </div>
 
                                     <div class="prod-info">
+                                        <!-- informações do produto -->
                                         <div class="prod-category">
-                                            <p>Casual</p>
+                                            <!-- categoria do produto -->
+                                            <p>casual</p>
                                         </div>
                                         <a href="#" class="prod-title">Air Jordan 1 High OG</a>
+                                        <!-- título do produto -->
                                         <div class="prod-buy">
-                                            <p class="prod-price">R$ 1699,99</p>
+                                            <!-- botão de compra -->
+                                            <p class="prod-price">r$ 1699,99</p>
+                                            <!-- preço do produto -->
                                             <a href="#" class="buy-btn">Buy Now!</a>
+                                            <!-- botão de compra -->
                                         </div>
                                     </div>
                                 </div>
@@ -180,6 +208,7 @@
                             </li>
                         </ul>
                         <i id="nike-right" class="fa-solid fa-angle-right"></i>
+                        <!-- ícone de navegação para a direita -->
                     </div>
                 </div>
             </div>
@@ -338,8 +367,7 @@
                                     <div class="prod-container">
                                         <div class="prod-img">
                                             <a href="#">
-                                                <img src="../images/550.svg" class="prod-img-side" alt=""
-                                                    srcset="" />
+                                                <img src="../images/550.svg" class="prod-img-side" alt="" srcset="" />
                                                 <img src="../images/side-550.svg" class="prod-img-front" alt=""
                                                     srcset="" />
                                             </a>
@@ -415,8 +443,7 @@
                                     <div class="prod-container">
                                         <div class="prod-img">
                                             <a href="#">
-                                                <img src="../images/574v2.svg" class="prod-img-side" alt=""
-                                                    srcset="" />
+                                                <img src="../images/574v2.svg" class="prod-img-side" alt="" srcset="" />
                                                 <img src="../images/side-574v2.svg" class="prod-img-front" alt=""
                                                     srcset="" />
                                             </a>
@@ -442,8 +469,7 @@
                                     <div class="prod-container">
                                         <div class="prod-img">
                                             <a href="#">
-                                                <img src="../images/997h.svg" class="prod-img-side" alt=""
-                                                    srcset="" />
+                                                <img src="../images/997h.svg" class="prod-img-side" alt="" srcset="" />
                                                 <img src="../images/side-997h.svg" class="prod-img-front" alt=""
                                                     srcset="" />
                                             </a>
@@ -471,25 +497,33 @@
     </section>
 
     <footer>
+        <!-- rodapé da página -->
         <div class="ft-container">
+            <!-- container do rodapé -->
             <div class="ft-lgnsm">
                 <!-- "ft-lgnsm" significa "footer - logo e (and) sitemap" -->
-                <h3>SHOEXX</h3>
-                <h4>SITEMAP</h4>
-                <p>Home</p>
-                <p>Brands</p>
-                <p>Collections</p>
-                <p>Style tips</p>
+                <h3>shoexx</h3>
+                <!-- nome da empresa -->
+                <h4>sitemap</h4>
+                <!-- título do mapa do site -->
+                <p>home</p>
+                <!-- links do mapa do site -->
             </div>
             <div class="ft-cnt">
-                <h4>CONTACT US</h4>
-                <p>Rua das Fiandeiras, Vila Olímpia, São Paulo - SP</p>
+                <!-- informações de contato -->
+                <h4>contact us</h4>
+                <!-- título de contato -->
+                <p>rua das fiandeiras, vila olímpia, são paulo - sp</p>
+                <!-- endereço de contato -->
                 <a href="https://maps.app.goo.gl/b9XsSibmVSLNZ8NZ7">
-                    <p>MAP/DIRECTIONS</p>
+                    <p>map/directions</p>
                 </a>
+                <!-- link para direções no mapa -->
             </div>
             <div class="ft-medias">
-                <h4>FIND US IN SOCIAL MEDIAS</h4>
+                <!-- links para mídias sociais -->
+                <h4>find us in social medias</h4>
+                <!-- ícones de logos de redes sociais -->
                 <div class="ft-logos">
                     <img src="../images/Facebook.svg" alt="" srcset="" />
                     <img src="../images/Instagram.svg" alt="" srcset="" />
